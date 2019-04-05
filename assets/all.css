@@ -33,7 +33,6 @@
 body {
 	align-items: center;
 	background-color: #ffffff;
-	background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.836));
 	flex-direction: column;
 	transition-property:  #F0F0F0;
 	display: flex;
