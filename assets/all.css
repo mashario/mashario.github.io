@@ -1,30 +1,3 @@
-@keyframes inhale {
-	0%   { opacity: 1; }
-	10%  { opacity: 1; }
-	20%  { opacity: 1; }
-	25%  { opacity: 0; }
-	100% { opacity: 0; }
-}
-
-@keyframes hold {
-	0%   { opacity: 0; }
-	19%  { opacity: 0; }
-	20%  { opacity: 0; }
-	45%  { opacity: 1; }
-	55%  { opacity: 0; }
-	100% { opacity: 0; }
-}
-
-@keyframes exhale {
-	0%   { opacity: 0; }
-	54%  { opacity: 0; }
-	55%  { opacity: 1; }
-	75%  { opacity: 0; }
-	85%  { opacity: 1; }
-	95%  { opacity: 1; }
-	100% { opacity: 0; }
-}
-
 
 @keyframes lungs {
 	0%  { padding: 0.4em; }
@@ -47,8 +20,8 @@ body {
 }
 
 body > div {
-	animation-delay: 0s;
-	animation-duration: 19s;
+	animation-delay: 4s;
+	animation-duration: 22s;
 	animation-iteration-count: infinite;
 	animation-name: lungs;
 	background-color: #e1c6b4;
@@ -76,28 +49,28 @@ body > div {
 	}
 
 		body > div > div + span {
-			animation-name: inhale;
-			opacity: 1;
+			animation-name: hold1;
+			opacity: 0;
 		}
 
 		body > div > div + span + span {
-			animation-name: hold;
+			animation-name: inhale;
 			opacity: 0;
 		}
 
 		body > div > div + span + span + span {
-			animation-name: exhale;
+			animation-name: hold;
 			opacity: 0;
 		}
 		body > div > div + span + span + span + span {
-			animation-name: hold;
+			animation-name: exhale;
 			opacity: 0;
 		}
 
 
 	body > div > span {
 		animation-delay: 0s;
-		animation-duration: 19s;
+		animation-duration: 22s;
 		animation-iteration-count: infinite;
 		font-family: "playfair display", playfair display;
 		font-size: 0.05em;
@@ -121,7 +94,7 @@ button {
 	line-height: 1.5em;
 	padding: 0.25em 0.75em 0 0.75em;
 	position: absolute;
-	transition-duration: 1.0s;
+	transition-duration: 20s;
 	transition-property: bottom;
 	transition-timing-function: ease;
 }
