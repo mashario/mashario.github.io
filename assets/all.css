@@ -1,5 +1,5 @@
 
-@keyframes hold1 {
+@keyframes holdd {
 	0%   { opacity: 1; }
 	10%  { opacity: 1; }
 	20%  { opacity: 0; }
@@ -84,8 +84,8 @@ body > div {
 	}
 
 		body > div > div + span {
-			animation-name: hold1;
-			opacity: 1;
+			animation-name: holdd;
+			opacity: 0;
 		}
 
 		body > div > div + span + span {
