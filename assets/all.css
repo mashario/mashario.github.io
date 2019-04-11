@@ -1,4 +1,39 @@
 
+@keyframes hold1 {
+	0%   { opacity: 1; }
+	10%  { opacity: 1; }
+	20%  { opacity: 0; }
+
+}
+@keyframes inhale {
+	0%   { opacity: 0; }
+	10%  { opacity: 0; }
+	20%  { opacity: 1; }
+	25%  { opacity: 1; }
+	45%  { opacity: 0; }
+}
+
+@keyframes hold {
+	0%   { opacity: 0; }
+	19%  { opacity: 0; }
+	20%  { opacity: 0; }
+	55%  { opacity: 1; }
+	65%  { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@keyframes exhale {
+	0%   { opacity: 0; }
+	54%  { opacity: 0; }
+	55%  { opacity: 0; }
+	75%  { opacity: 1; }
+	85%  { opacity: 1; }
+	95%  { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+
+
 @keyframes lungs {
 	0%  { padding: 0.4em; }
 	21% { padding: 0.75rem; }
